@@ -18,7 +18,7 @@
 
 
 $$
-S = f(\mu \mid g, P \sigma^2, \lambda, \epsilon)
+S = f(\mu \mid g, P, \sigma^2, \lambda, \epsilon)
 $$
 
 
