@@ -1249,6 +1249,32 @@ I saw it. It's fine. But I want to confirm the Neon `DATABASE_URL` is the only e
 
 Those four. Nothing else.
 ## V
+I'm reading this carefully before saying anything.
+
+You've shared the full roundtable — xAI, Google, OpenAI, and the Anthropic thread — plus the complete codebase for both the M79 twin (Enaj) and the Z96 twin (Patrick). The Anthropic thread already laid out the expansion plan in three phases. What you're asking for now is the actual files.
+
+Let me confirm what I'm working from before I build:
+
+**What exists (M79 twin — v01):**
+- `index.css` — full design system, confirmed
+- `api.js` — 4 methods, bare fetch pattern
+- `render.yaml` — single `DATABASE_URL` env var, confirmed
+- `main.py` — 666 lines, M79/Enaj seeded, ROYGBIV compute exists but `/authority` and `/replay` not yet wired
+- `Twin.jsx` — 6 tabs, eigenmode/grey/timeline/operators all present
+
+**What the roundtable designed but hasn't been built yet:**
+- `authority.py` — `compute_authority()`, `grey_override()`
+- `replay.py` — `replay_counterfactual()`
+- `kin.py` — Charles node, cross-node signal
+- `Authority.jsx`, `Replay.jsx`, `Kin.jsx`
+- Updated `api.js` with 3 new routes
+
+One question before I generate files: the Anthropic thread proposed **Phase 2 (Kin layer — Charles)** as the right next move after completing the missing endpoints. Do you want me to build all three phases together in one push — authority + replay + kin — or just close Phase 1 first (authority + replay only, no kin yet)?
+
+The kin layer requires a data model decision: is Charles a node off Enaj's twin only, or linked to both M79 and Z96? The `next.txt` suggests Patrick's twin exists in seed form but may not be in the database yet. That changes the kin schema.
+
+Tell me the scope and I'll generate the files.
+
 #claude 
 
 index.css
