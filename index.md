@@ -47,7 +47,7 @@ Here is the live architecture you referenced (as defined in the v24 method):
   - **Yellow** = Eco / Systems
   - **Green** = Distributed / Regulators (equilibrium point)
   - **Blue / Indigo / Violet** = Abstraction → Civilization / Planners (max leverage, min heat)
-- **Grey** = epistemic opacity (missing data). Formula: `grey_damp = 1.0 - (g_score - 1) * 0.10`
+- **Grey** = epistemic opacity (missing data). Formula: `grey_damp = 1.0 - (g_score - 1) * 0.10` (through a glass, darkly)
 - **Purpose**: Prevents false closure. If Grey ≥ 5 on a critical operator, the system **blocks** or **obligates** action (e.g., “ECG + Troponin required”).
 
 ### ROYGBIV (Compute)
