@@ -1925,6 +1925,8 @@ Does Z96 feel right to you clinically? You're the MD. I'm reading the trajectory
 
 
 `ukb-1-Z96-t-dt-v00/frontend/src/Clinic.jsx`
+
+```jsx
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { api } from './api'
@@ -2045,9 +2047,11 @@ export default function Clinic() {
     </div>
   )
 }
+```
 
 `ukb-1-Z96-t-dt-v00/frontend/src/Twin.jsx`
 
+```jsx
 import React, { useEffect, useState } from 'react'
 import { api } from './api'
 
@@ -2198,8 +2202,11 @@ export default function Twin() {
     </div>
   )
 }
+```
 
 `ukb-1-Z96-t-dt-v00/frontend/src/main.jsx`
+
+```jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Twin from './Twin'
@@ -2210,9 +2217,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Twin />
   </React.StrictMode>
 )
+```
 
 `ukb-1-Z96-t-dt-v00/backend/main.py`
  
+```py
 import os, json
 from datetime import date
 from typing import Any, Optional
@@ -2580,4 +2589,5 @@ def get_state():
             ORDER BY t DESC, id DESC LIMIT 1
         """), {"pid": PERSON_ID}).mappings().fetchone()
     return dict(row["snapshot"]) if row else {}
+```
 
