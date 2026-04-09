@@ -170,30 +170,30 @@ If it does, your system collapses into **false certainty**—the exact failure m
 
 Define the scalar not as a simple projection, but as:
 
-[
+$$
 S = f(\mu, \sigma^2, \lambda, \epsilon, G, P)
-]
+$$
 
 Where:
 
-* ( \mu ) = central estimate (vector projection)
-* ( \sigma^2 ) = variance
-* ( \lambda ) = eigen-instability
-* ( \epsilon ) = residual uncertainty
-* ( G ) = Grey score
-* ( P ) = Priority (ROYGBIV weight)
+* $\mu$ = central estimate (vector projection)
+* $\sigma^2$ = variance
+* $\lambda$ = eigen-instability
+* $\epsilon$ = residual uncertainty
+* $G$ = Grey score
+* $P$ = Priority (ROYGBIV weight)
 
 A robust form:
 
-[
+$$
 S = \mu - \alpha \cdot \sigma - \beta \cdot \lambda - \gamma \cdot \epsilon
-]
+$$
 
 Subject to:
 
-[
+$$
 \text{if } G \geq 5 \Rightarrow S \rightarrow \varnothing
-]
+$$
 
 This preserves:
 
@@ -278,9 +278,9 @@ This distinction is *not cosmetic*—it prevents a **category collision between 
 
 Your Authority State layer now implicitly becomes:
 
-[
+$$
 \text{Decision State} = f(S, g, G, P)
-]
+$$
 
 Where:
 
@@ -326,13 +326,13 @@ That separation is **sovereignty**.
 
 To fully stabilize the pipeline, define:
 
-[
+$$
 S^* =
 \begin{cases}
 \varnothing & \text{if } g \geq 5 \
 S \cdot G & \text{otherwise}
 \end{cases}
-]
+$$
 
 This ensures:
 
