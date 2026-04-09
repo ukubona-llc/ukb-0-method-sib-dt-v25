@@ -16,6 +16,12 @@
 <!-- Usage inline: $E = mc^2$ -->
 <!-- Usage block:  $$\int_0^\infty e^{-x} dx = 1$$ -->
 
+
+$$
+S = f(\mu \mid \sigma^2, \lambda, \epsilon, G, P)
+$$
+
+
 # Ukubona
 - TMVES (Interface)
 - GAP (Weights)
@@ -180,7 +186,7 @@ Where:
 * $\sigma^2$ = variance
 * $\lambda$ = eigen-instability
 * $\epsilon$ = residual uncertainty
-* $G$ = Grey score
+* $g$ = Grey score
 * $P$ = Priority (ROYGBIV weight)
 
 A robust form:
@@ -192,14 +198,14 @@ $$
 Subject to:
 
 $$
-\text{if } G \geq 5 \Rightarrow S \rightarrow \varnothing
+\text{if } g \geq 5 \Rightarrow S \rightarrow \varnothing
 $$
 
 This preserves:
 
 * **Direction (μ)** → intent
 * **Risk penalties (σ, λ, ε)** → uncertainty mass
-* **Epistemic veto (G)** → hard stop
+* **Epistemic veto (g)** → hard stop
 
 ---
 
